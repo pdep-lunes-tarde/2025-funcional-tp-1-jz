@@ -1,43 +1,46 @@
 module Library where
 import PdePreludat
 
--- 1. Numeros
+doble :: Number -> Number
+doble numero = numero + numero
 
 siguiente :: Number -> Number
-siguiente = implementame
+siguiente numero = numero + 1
 
 esPositivo :: Number -> Bool
-esPositivo = implementame
+esPositivo pos = pos > 0
 
--- escriban el tipo de esta función
-inversa n = implementame
+inversa :: Number -> Number
+inversa n = 1/n 
 
--- 2. Temperaturas
 
-celsiusAFahrenheit :: Number -> Number
-celsiusAFahrenheit celsius = implementame
+-- Celsius a Fahrenheit
+gradosFahrenheit :: Number -> Number
+gradosFahrenheit c = c * 1.8 + 32
 
-fahrenheitACelsius :: Number -> Number
-fahrenheitACelsius fahrenheit = implementame
+-- Fahrenheit a Celsius
+gradosCelsius :: Number -> Number
+gradosCelsius f = (f - 32) / 1.8
 
--- escriban el tipo de esta función
-haceFrioCelsius grados = implementame
+haceFrioCelsius :: Number -> Bool
+haceFrioCelsius hfc = hfc <= 8
 
--- escriban el tipo de esta función
-haceFrioFahrenheit grados = implementame
+haceFrioFarenheit :: Number -> Bool
+haceFrioFarenheit hff = haceFrioCelsius (gradosCelsius hff)
 
--- 2.5 Bonus OPCIONAL
+--bonus
+
 perimetroCirculo :: Number -> Number
-perimetroCirculo radio = implementame
+perimetroCirculo radio = radio * (2 * 3.14)
 
 perimetroCuadrado :: Number -> Number
-perimetroCuadrado lado = implementame
+perimetroCuadrado lado = lado * 4
 
 superficieCuadrado :: Number -> Number
-superficieCuadrado lado = implementame
+superficieCuadrado lado = lado * lado
 
 superficieCubo :: Number -> Number
-superficieCubo lado = implementame
+superficieCubo lado = lado * lado * lado
 
 superficieCilindro :: Number -> Number -> Number
-superficieCilindro radio altura = implementame
+superficieCilindro radio altura = (2 * 3.14) * radio * altura + (2 * 3.14) * (radio * radio)

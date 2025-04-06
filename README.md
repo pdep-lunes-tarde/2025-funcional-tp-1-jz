@@ -2,14 +2,14 @@
 
 ## Grupo, nombre y legajo de integrantes
 
-- Nombre del grupo: **Completar**
+- Nombre del grupo: JZ
 
 Integrantes:
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 222.298_0
+- Nombre: Juan Cruz Fernandez
 
-- Legajo: **Completar** 
-- Nombre: **Completar**
+- Legajo: 222.905-6 
+- Nombre: Facundo Zuccarino
 
 
 ## Objetivos
